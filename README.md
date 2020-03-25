@@ -7,7 +7,7 @@
 </p>
 
 ### About
-An add-in for OpenGL for a more convenient programming process. The base classes are implemented: 
+An add-in for OpenGL for a more convenient programming process. There is a possibility of limiting FPS.The base classes are implemented: 
 - Point
 - Line
 - Circle
@@ -16,8 +16,6 @@ An add-in for OpenGL for a more convenient programming process. The base classes
 - Square
 - Triangle
 - Curve
-
-There is a possibility of limiting FPS.
 
 #Example
 ```cpp
