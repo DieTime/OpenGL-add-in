@@ -7,7 +7,7 @@
 </p>
 
 ### About
-An add-in for OpenGL for a more convenient programming process. There is a possibility of limiting FPS.The base classes are implemented: 
+An add-in for OpenGL for a more convenient programming process. The base classes are implemented: 
 - Point
 - Line
 - Circle
@@ -17,7 +17,9 @@ An add-in for OpenGL for a more convenient programming process. There is a possi
 - Triangle
 - Curve
 
-#Example
+There is a possibility of limiting FPS.
+
+# Example
 ```cpp
 #include "glutHelper/helper.h"
 
@@ -37,7 +39,7 @@ int main() {
 }
 ```
 
-#Installation for MinGW
+# Installation for MinGW
 1. Download freeglut library from: https://www.transmissionzero.co.uk/files/software/development/GLUT/freeglut-MinGW.zip
 2. Copy folders from the archive to the directory with MinGW.
 3. Open project.
