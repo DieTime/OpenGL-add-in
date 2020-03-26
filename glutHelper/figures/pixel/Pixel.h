@@ -3,8 +3,8 @@
 #define PIXEL_H
 
 #include <GL/glut.h>
-#include "../../Color/Color.h"
-#include "../../Interfaces/IDraw.h"
+#include "../../color/Color.h"
+#include "../../interfaces/IDraw.h"
 
 class Pixel : public IDraw {
 protected:

@@ -14,9 +14,11 @@ Pixel::Pixel(float x, float y, const char *hex, float w) {
 }
 
 void Pixel::draw(){
-    glPointSize(width);
     glColor3f(color.r, color.g, color.b);
-    glBegin(GL_POINTS);
-        glVertex2f(x, y);
+    glBegin(GL_QUADS);
+        glVertex2f(x - width, y - width);
+        glVertex2f(x - width, y + width);
+        glVertex2f(x + width, y + width);
+        glVertex2f(x + width, y - width);
     glEnd();
 };

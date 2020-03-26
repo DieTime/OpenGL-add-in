@@ -20,12 +20,19 @@ void Oval::draw() {
         }
         glEnd();
     } else {
-        glLineWidth(width);
-        glBegin(GL_LINE_LOOP);
-        for (int i = 0; i < segments; i++)   {
+        float rx1 = rx - width;
+        float rx2 = rx + width;
+        float ry1 = ry - width;
+        float ry2 = ry + width;
+        glBegin(GL_TRIANGLE_STRIP);
+        for (int i = 0; i <= segments; i++)   {
             glVertex2f (
-                    (x + (rx * cos(i * 6.2831 / segments))),
-                    (y + (ry * sin(i * 6.2831 / segments)))
+                    (x + (rx1 * cos(i * 6.2831 / segments))),
+                    (y + (ry1 * sin(i * 6.2831 / segments)))
+            );
+            glVertex2f (
+                    (x + (rx2 * cos(i * 6.2831 / segments))),
+                    (y + (ry2 * sin(i * 6.2831 / segments)))
             );
         }
         glEnd();

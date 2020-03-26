@@ -2,7 +2,7 @@
 #ifndef CIRCLE_H
 #define CIRCLE_H
 
-#include "../Oval/Oval.h"
+#include "../oval/Oval.h"
 
 class Circle : public Oval {
 public:

@@ -14,12 +14,19 @@ Curve::Curve(float x, float y, float rx, float ry, float start_deg, float end_de
 void Curve::draw() {
     int segments = 50;
     glColor3f(color.r, color.g, color.b);
-    glLineWidth(width);
-    glBegin(GL_LINE_STRIP);
+    float rx1 = rx - width;
+    float rx2 = rx + width;
+    float ry1 = ry - width;
+    float ry2 = ry + width;
+    glBegin(GL_TRIANGLE_STRIP);
     for (float i = start_deg; i < end_deg; i += 6.2831f / (float)segments)   {
         glVertex2f (
-                (x + rx * std::cos(i)),
-                (y + ry * std::sin(i))
+                (x + rx1 * std::cos(i)),
+                (y - ry1 * std::sin(i))
+        );
+        glVertex2f (
+                (x + rx2 * std::cos(i)),
+                (y - ry2 * std::sin(i))
         );
     }
     glEnd();

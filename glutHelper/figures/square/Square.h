@@ -2,7 +2,7 @@
 #ifndef SQUARE_H
 #define SQUARE_H
 
-#include "../Rect/Rect.h"
+#include "../rect/Rect.h"
 
 class Square : public Rect {
 public:

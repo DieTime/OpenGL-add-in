@@ -1,9 +1,9 @@
 # OpenGL Add-in
 <p align="center">
-  <img src="https://psv4.userapi.com/c856228/u215115449/docs/d15/b6eb94f3dda4/GLaddin.png?extra=W6Bn4na5Lee0XF1-cL2tipAs1LjGy3XzKjXYpMzu1HsDfNtR__M4iZQPjQwkQto1OwCSgVRJICs59zizPqkx2uToj7uZuBDMRr9QYgi1vjG41trfF3nsOmtOXmLm5JUgdFakih5yUoMSrBntQw-Y8Wdo" width="320">
+  <img src="https://i.ibb.co/Vq5WJK8/GLaddin.png" width="320">
 </p>
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="version">
+  <img src="https://img.shields.io/badge/version-1.1.0-blue.svg" alt="version">
 </p>
 
 ### About
@@ -26,11 +26,10 @@ There is a possibility of limiting FPS.
 float width = 0;
 
 void Display() {
-    Rect rect(0, 0, 0.5, width, "#ffffff");
+    Rect rect(250, 250, 50, width, "#ffffff");
     rect.draw();
 
-    width += 0.01;
-    if (width > 1) width = -1;
+    if (width++ > SCENE_WIDTH) width = 0;
 }
 
 int main() {
@@ -44,3 +43,8 @@ int main() {
 2. Copy folders from the archive to the directory with MinGW.
 3. Open project.
 4. Start coding.
+
+# Changes in version 1.1.0
+- Reference system
+- Fixed drawing shapes without fill
+- Added screen width and height constants

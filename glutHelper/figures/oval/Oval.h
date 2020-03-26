@@ -3,7 +3,7 @@
 #define OVAL_H
 
 #include <cmath>
-#include "../Pixel/Pixel.h"
+#include "../pixel/Pixel.h"
 
 class Oval : public Pixel {
 protected:

@@ -2,7 +2,8 @@
 #ifndef TRIANGLE_H
 #define TRIANGLE_H
 
-#include "../Line/Line.h"
+#include "../line/Line.h"
+#include <cmath>
 
 class Triangle : public Line {
 protected:

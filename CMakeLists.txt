@@ -15,4 +15,4 @@ add_executable(
         glutHelper/figures/oval/Oval.cpp glutHelper/figures/oval/Oval.h
         glutHelper/figures/curve/Curve.cpp glutHelper/figures/curve/Curve.h)
 
-target_link_libraries(glutHelper -lOpenGL32 -lfreeGLUT)
+target_link_libraries(glutHelper -lOpenGL32 -lfreeGLUT -lGLU32)

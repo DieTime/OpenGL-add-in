@@ -2,7 +2,7 @@
 #ifndef RECT_H
 #define RECT_H
 
-#include "../Pixel/Pixel.h"
+#include "../pixel/Pixel.h"
 
 class Rect : public Pixel {
 protected:

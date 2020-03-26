@@ -1,7 +1,8 @@
 #ifndef LINE_H
 #define LINE_H
 
-#include "../Pixel/Pixel.h"
+#include "../pixel/Pixel.h"
+#include <cmath>
 
 class Line : public Pixel {
 protected:

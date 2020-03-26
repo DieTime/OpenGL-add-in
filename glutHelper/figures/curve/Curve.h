@@ -2,7 +2,7 @@
 #ifndef CURVE_H
 #define CURVE_H
 
-#include "../Oval/Oval.h"
+#include "../oval/Oval.h"
 
 class Curve : public Oval {
     float start_deg;
