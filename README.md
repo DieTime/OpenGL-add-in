@@ -19,7 +19,7 @@ An add-in for OpenGL for a more convenient programming process. The base classes
 
 There is a possibility of limiting FPS.
 
-# Example
+### Example
 ```cpp
 #include "glutHelper/helper.h"
 
@@ -38,13 +38,13 @@ int main() {
 }
 ```
 
-# Installation for MinGW
+### Installation for MinGW
 1. Download freeglut library from: https://www.transmissionzero.co.uk/files/software/development/GLUT/freeglut-MinGW.zip
 2. Copy folders from the archive to the directory with MinGW.
 3. Open project.
 4. Start coding.
 
-# Changes in version 1.1.0
+### Changes in version 1.1.0
 - Reference system
 - Fixed drawing shapes without fill
 - Added screen width and height constants
