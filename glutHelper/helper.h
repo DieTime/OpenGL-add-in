@@ -1,32 +1,47 @@
 #pragma once
+
 #include <GL/glut.h>
-#include "figures/figures.h"
 
-static int DELAY;
-static float SCENE_WIDTH;
-static float SCENE_HEIGHT;
+#include "./figures/pixel/Pixel.h"
+#include "./figures/line/Line.h"
+#include "./figures/triangle/Triangle.h"
+#include "./figures/oval/Oval.h"
+#include "./figures/curve/Curve.h"
+#include "./figures/circle/Circle.h"
+#include "./figures/rect/Rect.h"
+#include "./figures/square/Square.h"
 
+// Delay for setting FPS
+static unsigned int frameDelay;
+
+// Redraw the window with the specified fps
 void glRedraw(int) {
     glutPostRedisplay();
-    glutTimerFunc(DELAY, glRedraw, 0);
+    glutTimerFunc(frameDelay, glRedraw, 0);
     glutSwapBuffers();
     glClear(GL_COLOR_BUFFER_BIT);
 }
 
-void CreateGL(int width, int height, const char* title, const char* bg_color, int fps, void draw_func()) {
-    int argc = 1; char* argv;
-    Color color(bg_color);
-    DELAY = 1000 / fps;
-    SCENE_WIDTH = (float)width;
-    SCENE_HEIGHT = (float)height;
+// Window initialization
+void CreateGL(int width, int height, const char* title, const char* bg, unsigned int fps, void func()) {
+    // Arguments to initialize the window
+    int argc = 0; char* argv = nullptr;
+
+    // Background color
+    Color color(bg);
+
+    // Compute delay between frames
+    frameDelay = 1000 / fps;
+
+    // Initialize the window and render cycle
     glutInit(&argc, &argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
     glutInitWindowSize(width, height);
     glutInitWindowPosition(200, 200);
     glutCreateWindow(title);
-    glClearColor(color.r, color.g, color.b, 1);
+    glClearColor(color.get_r(), color.get_g(), color.get_b(), 1);
     gluOrtho2D(0, width, height, 0);
-    glutDisplayFunc(draw_func);
+    glutDisplayFunc(func);
     glRedraw(0);
     glutMainLoop();
 }

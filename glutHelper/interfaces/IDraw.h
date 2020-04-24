@@ -1,11 +1,9 @@
-#ifndef RAYS_IDRAW_H
-#define RAYS_IDRAW_H
-
+#ifndef I_DRAW_H
+#define I_DRAW_H
 
 class IDraw {
 public:
     virtual void draw() = 0;
 };
 
-
-#endif //RAYS_IDRAW_H
+#endif //I_DRAW_H
