@@ -9,8 +9,8 @@ float vx = 10;
 float vy = 10;
 
 // Фигуры
-Circle c = Circle(250.0, 250.0, 50, "#ffffff", true, 2);
-Triangle p = Triangle(250.0, 250.0, 300.0, 300.0, 20.0, 50.0, "#ffffff",false, 2);
+Circle c(250.0, 250.0, 50, "#00ff2f", false, 2);
+Pixel p(250.0, 250.0, "#b700ff", 10);
 
 // Указатель на базовый класс
 Pixel* ptr = &p;
