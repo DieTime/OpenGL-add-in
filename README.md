@@ -20,7 +20,8 @@ An add-in for OpenGL for a more convenient programming process. The base classes
 There is a possibility of limiting FPS.
 
 ### Example
-![Example gif](https://i.ibb.co/j8sFh4m/example.gif)
+<img src="https://i.ibb.co/j8sFh4m/example.gif" alt="example gif" width="300">
+
 ```cpp
 #include "glutHelper/helper.h"
 
