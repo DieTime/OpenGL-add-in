@@ -20,6 +20,7 @@ An add-in for OpenGL for a more convenient programming process. The base classes
 There is a possibility of limiting FPS.
 
 ### Example
+![Example gif](https://i.ibb.co/j8sFh4m/example.gif)
 ```cpp
 #include "glutHelper/helper.h"
 
@@ -35,18 +36,20 @@ Pixel p(250.0, 250.0, "#b700ff", 10);
 Pixel* ptr = &p;
 
 void Display() {
+    // Changing a moving figure on space key
     if (GetAsyncKeyState(VK_SPACE)) {
         if (ptr == &c) ptr = &p;
         else if (ptr == &p) ptr = &c;
         Sleep(300);
     }
-
+    
     if (GetAsyncKeyState(VK_UP))    ptr->move(0, -vy);
     if (GetAsyncKeyState(VK_DOWN))  ptr->move(0, vy);
     if (GetAsyncKeyState(VK_RIGHT)) ptr->move(vx, 0);
     if (GetAsyncKeyState(VK_LEFT))  ptr->move(-vx, 0);
 
-    ptr->draw();
+    p.draw();
+    c.draw();
 }
 
 int main() {

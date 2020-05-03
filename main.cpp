@@ -1,17 +1,18 @@
 #include "glutHelper/helper.h"
 
-int width = 500;
+int width = 800;
 int height = 500;
 
 float vx = 10;
 float vy = 10;
 
-Circle c(250.0, 250.0, 50, "#00ff2f", false, 2);
-Pixel p(250.0, 250.0, "#b700ff", 10);
+Circle c(400, 250.0, 50, "#00ff2f", false, 2);
+Pixel p(400, 250.0, "#b700ff", 10);
 
 Pixel* ptr = &p;
 
 void Display() {
+    // Changing a moving figure on space key
     if (GetAsyncKeyState(VK_SPACE)) {
         if (ptr == &c) ptr = &p;
         else if (ptr == &p) ptr = &c;
@@ -23,10 +24,11 @@ void Display() {
     if (GetAsyncKeyState(VK_RIGHT)) ptr->move(vx, 0);
     if (GetAsyncKeyState(VK_LEFT))  ptr->move(-vx, 0);
 
-    ptr->draw();
+    p.draw();
+    c.draw();
 }
 
 int main() {
-    CreateGL(width, height, "GLFigures", "#00000", 60, Display);
+    CreateGL(width, height, "OpenGL Example", "#ffffff", 60, Display);
     return 0;
 }

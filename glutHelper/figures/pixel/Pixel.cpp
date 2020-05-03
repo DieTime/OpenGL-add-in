@@ -1,4 +1,5 @@
 #include "Pixel.h"
+#include <iostream>
 
 Pixel::Pixel(float x, float y, const char *hex, float width) {
     this->x = x;
@@ -31,3 +32,4 @@ float Pixel::gety_one() { return y; }
 
 void Pixel::setx_one(float X) { x = X; }
 void Pixel::sety_one(float Y) { y = Y; }
+

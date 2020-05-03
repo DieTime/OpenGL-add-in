@@ -1,4 +1,5 @@
 #include "Line.h"
+#include <iostream>
 
 Line::Line(float x1, float y1, float x2, float y2,
            const char *hex, float w) : Pixel(x1, y1, hex, w) {
