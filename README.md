@@ -8,7 +8,7 @@
 
 ### About
 An add-in for OpenGL for a more convenient programming process. The base classes are implemented: 
-- Point
+- Pixel
 - Line
 - Circle
 - Oval
