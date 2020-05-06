@@ -60,7 +60,7 @@ int main() {
 ```
 
 ### Installation for MinGW
-1. Download freeGlut library with the necessary drivers from: http://tiny.cc/mskjoz
+1. Download freeGlut library with the necessary drivers from: http://tiny.cc/61kjoz
 2. Copy folders from the archive to the directory with MinGW.
 3. Open project.
 4. Start coding.
