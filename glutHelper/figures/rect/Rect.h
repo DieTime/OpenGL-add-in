@@ -14,11 +14,11 @@ public:
 
     void draw() override;
 
-    virtual float get_h();
-    virtual float get_w();
+    virtual float get_h(); // get height
+    virtual float get_w(); // get width
 
-    virtual void set_h(float H);
-    virtual void set_w(float W);
+    virtual void set_h(float H); // set height
+    virtual void set_w(float W); // set width
 };
 
 #endif //RECT_H

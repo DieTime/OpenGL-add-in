@@ -17,11 +17,11 @@ public:
 
     void draw() override;
 
-    virtual float get_rx();
-    virtual float get_ry();
+    virtual float get_rx(); // get X axis radius
+    virtual float get_ry(); // get Y axis radius
 
-    virtual void set_rx(float rx);
-    virtual void set_ry(float ry);
+    virtual void set_rx(float rx); // set X axis radius
+    virtual void set_ry(float ry); // set Y axis radius
 };
 
 #endif //OVAL_H

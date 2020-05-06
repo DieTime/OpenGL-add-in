@@ -3,7 +3,7 @@
 
 class IDraw {
 public:
-    virtual void draw() = 0;
+    virtual void draw() = 0; // func for draw shape in window
 };
 
 #endif //I_DRAW_H

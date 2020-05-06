@@ -79,8 +79,8 @@ void Triangle::draw() {
     }
 }
 
-float Triangle::getx_three() { return x + dx3; }
-float Triangle::gety_three() { return y + dy3; }
+float Triangle::get_x3() { return x + dx3; }
+float Triangle::get_y3() { return y + dy3; }
 
-void Triangle::setx_three(float X) { dx3 = X - x; }
-void Triangle::sety_three(float Y) { dy3 = Y - y; }
+void Triangle::set_x3(float X) { dx3 = X - x; }
+void Triangle::set_y3(float Y) { dy3 = Y - y; }

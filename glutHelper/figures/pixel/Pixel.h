@@ -19,14 +19,13 @@ public:
 
     void draw() override;
 
-    // Coordinate change
-    void move(float dx, float dy) override;
+    void move(float dx, float dy) override; // move shape on window
 
-    float getx_one();
-    float gety_one();
+    float get_x();
+    float get_y();
 
-    void setx_one(float x);
-    void sety_one(float y);
+    void set_x(float x);
+    void set_y(float y);
 };
 
 #endif //PIXEL_H

@@ -9,19 +9,19 @@
 
 class Triangle : public Line, public IFill {
 protected:
-    float dx3 = 0;
-    float dy3 = 0;
+    float dx3 = 0; // X axis dist of the third point relative to the first
+    float dy3 = 0; // Y axis dist of the third point relative to the first
 public:
     Triangle() = default;
     Triangle(float x1, float y1, float x2, float y2, float x3, float y3, const char *hex, bool fill = false, float w = 1);
 
     void draw() override;
 
-    float getx_three();
-    float gety_three();
+    float get_x3();
+    float get_y3();
 
-    void setx_three(float x);
-    void sety_three(float y);
+    void set_x3(float x);
+    void set_y3(float y);
 };
 
 

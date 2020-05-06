@@ -9,13 +9,13 @@ public:
     Circle() = default;
     Circle(float x, float y, float r, const char* hex, bool fill = false, float w = 1);
 
-    float get_rx() override;
-    float get_ry() override;
-    float get_radius();
+    float get_rx() override; // get X axis radius
+    float get_ry() override; // get Y axis radius
+    float get_radius(); // get global radius
 
-    void set_rx(float rx) override;
-    void set_ry(float ry) override;
-    void set_radius(float r);
+    void set_rx(float rx) override; // set X axis radius
+    void set_ry(float ry) override; // set Y axis radius
+    void set_radius(float r); // set global radius
 };
 
 #endif //CIRCLE_H

@@ -3,7 +3,7 @@
 
 class IMove {
 public:
-    virtual void move(float dx, float dy) = 0;
+    virtual void move(float dx, float dy) = 0; // func for move shape on window
 };
 
 #endif //I_MOVE_H

@@ -7,7 +7,7 @@ Square::Square(float x, float y, float l, const char *hex, bool fill,
 
 float Square::get_h() { return h; }
 float Square::get_w() { return h; }
-float Square::get_l() { return h; }
+float Square::get_side_len() { return h; }
 
 void Square::set_h(float H) {
     h = H;
@@ -17,7 +17,7 @@ void Square::set_w(float W) {
     h = W;
     w = W;
 }
-void Square::set_l(float L) { {
+void Square::set_side_len(float L) { {
     h = L;
     w = L;
 }}

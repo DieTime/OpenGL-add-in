@@ -3,7 +3,7 @@
 
 class IFill {
 protected:
-    bool fill = false;
+    bool fill = false; // State of fill
 public:
     bool getFill() { return fill; };
     void setFill(bool Fill) { fill = Fill; };

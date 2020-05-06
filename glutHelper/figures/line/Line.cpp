@@ -1,5 +1,4 @@
 #include "Line.h"
-#include <iostream>
 
 Line::Line(float x1, float y1, float x2, float y2,
            const char *hex, float w) : Pixel(x1, y1, hex, w) {
@@ -29,8 +28,8 @@ void Line::draw() {
     glEnd();
 }
 
-float Line::getx_two() { return (x + dx2); }
-float Line::gety_two() { return (y + dy2); }
+float Line::get_x2() { return (x + dx2); }
+float Line::get_y2() { return (y + dy2); }
 
-void Line::setx_two(float X) { dx2 = X - x; }
-void Line::sety_two(float Y) { dy2 = Y - y; }
+void Line::set_x2(float X) { dx2 = X - x; }
+void Line::set_y2(float Y) { dy2 = Y - y; }
